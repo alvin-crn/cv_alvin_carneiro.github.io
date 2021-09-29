@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap'); /* font-family: 'Gemunu Libre', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap'); /* font-family: 'Fira Sans', sans-serif; */
+ @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap'); /* font-family: 'Nanum Gothic', sans-serif; */
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+/* **************** IMAGE PRINCIPALE **************** */
+#imgprin{
+    background: url(./code_informatique.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+header>div>h1{
+    font-family: 'Gemunu Libre', sans-serif;
+    color: rgb(49, 141, 153);
+    font-size: 5em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #cdf2ff, 1px -1px 0 #cdf2ff, -1px 1px 0 #cdf2ff, -1px -1px 0 #cdf2ff, 1px 0px 0 #cdf2ff, 0px 1px 0 #cdf2ff, -1px 0px 0 #cdf2ff, 0px -1px 0 #cdf2ff;
+}
+/* **************** BODY **************** */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0;
+    padding: 0;
+}
+/* **************** LEFTPART **************** */
+#leftpart{
+    grid-column: 1fr;
+    background-color: rgb(49, 141, 153);
+    height: auto;
+    padding: 10px;
+
+}
+#leftpart h1{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2.5em;
+    padding: 10px 15px 10px 15px;
+}
+#leftpart li{
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 2px 0px 2px 15px;
+    font-size: 1em;
+}
+#contact li a:link{
+    color: white;
+    text-decoration: none;
+}
+#contact li a:visited{
+    color: white;
+}
+#contact li a:hover{
+    color: #ce9993;
+    font-size: 1.2em;
+    transition: 0.3s ease-in-out;
+}
+#leftpart ul{
+    padding: 10px 0px 50px 0px;
+}
+#leftpart p{
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 10px 0px 50px 15px;
+    font-size: 1em;
+}
+/* **************** RIGHTPART **************** */
+#rightpart{
+    grid-column: 2fr;
+    background-color: rgb(231, 243, 231);
+    height: auto;
+    padding: 10px;
+}
+#rightpart h1{
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    color: #155D42;
+    font-size: 2.5em;
+    padding: 20px;
+}
+#rightpart h2{
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+    font-size: 1.5em;
+    padding: 0 20px;
+}
+#rightpart .exppro p{
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 5px 20px;
+}
+#rightpart .formations p{
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 2px 20px 40px 20px;
+}
+#rightpart .exppro li{
+    list-style-type: circle;
+}
+#rightpart .exppro ul{
+    list-style-type: circle;
+    padding: 1px 40px;
+}
+#rightpart ul{
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 1px 20px;
+}
+/* **************** FOOTER **************** */
+footer{
+    background-color: #155D42;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:  0px 0px 20px 20px;
+}
+#copyright{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.2em;
+}
+@media screen and (max-width: 750px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #leftpart{
+        grid-column: 1fr;
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-around;
+    }
+    #contact li, #contact h1, #competences h1, #competences li, #autres h1, #autres li, #objectifs h1, #objectifs p{
+        display: flex;
+        justify-content: center;
+    }
+    #contact li, #competences li, #autres li{
+        padding: 0;
+    }
+    #contact ul, #competences ul, #autres ul, #objectifs p{
+        padding: 10px 0;
+    }
+    #contact, #competences, #autres, #objectifs{
+        padding: 10px;
+        width: 300px;
+    }
+    #rightpart{
+        grid-column: 1fr;
+    }
+    #rightpart .hobbis ul{
+        padding: 0 20px 10px 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    header>div>h1{
+        font-size: 4em;
+    }
+    #rightpart h1{
+        font-size: 1.5em;
+    }
+    #rightpart h2{
+        font-size: 1.2em;
+    }
+    #rightpart .exppro p{
+        font-size: 0.9em;
+    }
+    #rightpart .formations p{
+        font-size: 0.9em;
+    }
+    #rightpart .exppro li{
+        font-size: 0.9em;
+    }
+    #rightpart .lang li, .hobbis li{
+        font-size: 0.9em;
+    }
+    #rightpart .hobbis ul{
+        padding: 0 20px 10px 20px;
+    }
+}
+@media screen and (max-width: 430px){
+    header>div>h1{
+        font-size: 3em;
+    }
+}
