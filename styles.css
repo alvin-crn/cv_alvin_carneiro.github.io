@@ -75,7 +75,7 @@ header>div>h1{
 #contact li a:hover{
     color: #ce9993;
     font-size: 1.2em;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 #leftpart ul{
     padding: 10px 0px 50px 0px;
@@ -128,7 +128,7 @@ header>div>h1{
 }
 /* **************** FOOTER **************** */
 footer{
-    background-color: #155D42;
+    background-color: #98CCB9;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -195,6 +195,9 @@ footer{
     }
     #rightpart .hobbis ul{
         padding: 0 20px 10px 20px;
+    }
+    #copyright{
+        font-size: 0.9em;
     }
 }
 @media screen and (max-width: 430px){
