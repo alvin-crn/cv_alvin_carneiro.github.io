@@ -52,7 +52,7 @@ header>div>h1{
     padding: 10px;
 
 }
-#leftpart h1{
+#leftpart h2{
     color: white;
     text-transform: uppercase;
     font-family: 'Fira Sans', sans-serif;
@@ -93,14 +93,14 @@ header>div>h1{
     height: auto;
     padding: 10px;
 }
-#rightpart h1{
+#rightpart h2{
     text-transform: uppercase;
     font-family: 'Fira Sans', sans-serif;
     color: #155D42;
     font-size: 2.5em;
     padding: 20px;
 }
-#rightpart h2{
+#rightpart h3{
     text-transform: uppercase;
     font-family: 'Fira Sans', sans-serif;
     color: black;
@@ -150,7 +150,7 @@ footer{
         flex-flow:row wrap;
         justify-content: space-around;
     }
-    #contact li, #contact h1, #competences h1, #competences li, #autres h1, #autres li, #objectifs h1, #objectifs p{
+    #contact li, #contact h2, #competences h2, #competences li, #autres h2, #autres li, #objectifs h2, #objectifs p{
         display: flex;
         justify-content: center;
     }
@@ -175,10 +175,10 @@ footer{
     header>div>h1{
         font-size: 4em;
     }
-    #rightpart h1{
+    #rightpart h2{
         font-size: 1.5em;
     }
-    #rightpart h2{
+    #rightpart h3{
         font-size: 1.2em;
     }
     #rightpart .exppro p{
