@@ -32,7 +32,7 @@ h1, h2, h3{
 }
 header>div>h1{
     font-family: 'Gemunu Libre', sans-serif;
-    color: rgb(49, 141, 153);
+    color: #318D99;
     font-size: 5em;
     text-transform: uppercase;
     text-shadow: 1px 1px 0 #cdf2ff, 1px -1px 0 #cdf2ff, -1px 1px 0 #cdf2ff, -1px -1px 0 #cdf2ff, 1px 0px 0 #cdf2ff, 0px 1px 0 #cdf2ff, -1px 0px 0 #cdf2ff, 0px -1px 0 #cdf2ff;
@@ -47,7 +47,7 @@ header>div>h1{
 /* **************** LEFTPART **************** */
 #leftpart{
     grid-column: 1fr;
-    background-color: rgb(49, 141, 153);
+    background-color: #318D99;
     height: auto;
     padding: 10px;
 
@@ -86,10 +86,37 @@ header>div>h1{
     padding: 10px 0px 50px 15px;
     font-size: 1em;
 }
+/* ***BOUTON*** */
+.cvpdf a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10% 10px 10%;
+    height: 50px;
+    width: auto;
+    border-radius: 20px;
+}
+.cvpdf a{
+    font-family: 'Fira Sans', sans-serif;
+    color: #cdf2ff;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: solid #cdf2ff 3px;
+    transition: 0.3s ease-in;
+}
+.cvpdf a:hover{
+    color: #318D99;
+    background-color: #cdf2ff;
+    font-size: 1.1em;
+    transition: 0.3s ease-in-out;
+}
 /* **************** RIGHTPART **************** */
 #rightpart{
     grid-column: 2fr;
-    background-color: rgb(231, 243, 231);
+    background-color: #E7EAE7;
     height: auto;
     padding: 10px;
 }
@@ -163,6 +190,14 @@ footer{
     #contact, #competences, #autres, #objectifs{
         padding: 10px;
         width: 300px;
+    }
+    .cvpdf{
+        margin: 10px auto;
+        height: auto;
+        width: 80%;
+    }
+    .cvpdf a{
+        margin: auto;
     }
     #rightpart{
         grid-column: 1fr;
