@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap'); /* font-family: 'Gemunu Libre', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap'); /* font-family: 'Fira Sans', sans-serif; */
- @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap'); /* font-family: 'Nanum Gothic', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap'); /* font-family: 'Nanum Gothic', sans-serif; */
 body{
     margin: 0;
     padding: 0;
@@ -20,9 +20,9 @@ h1, h2, h3{
     margin: 0;
     padding: 0;
 }
-/* **************** IMAGE PRINCIPALE **************** */
+/* **************** HEADER **************** */
 #imgprin{
-    background: url(./code_informatique.jpg) no-repeat fixed 50% 50%;
+    background: url(./medias/code_informatique.jpg) no-repeat fixed 50% 50%;
     background-size: cover;
     height: 400px;
     display: flex;
@@ -34,8 +34,7 @@ header>div>h1{
     font-family: 'Gemunu Libre', sans-serif;
     color: #318D99;
     font-size: 5em;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0 #cdf2ff, 1px -1px 0 #cdf2ff, -1px 1px 0 #cdf2ff, -1px -1px 0 #cdf2ff, 1px 0px 0 #cdf2ff, 0px 1px 0 #cdf2ff, -1px 0px 0 #cdf2ff, 0px -1px 0 #cdf2ff;
+    text-shadow: 2px 2px 0 #cdf2ff, 2px -2px 0 #cdf2ff, -2px 2px 0 #cdf2ff, -2px -2px 0 #cdf2ff, 2px 0px 0 #cdf2ff, 0px 2px 0 #cdf2ff, -2px 0px 0 #cdf2ff, 0px -2px 0 #cdf2ff;
 }
 /* **************** BODY **************** */
 .container{
@@ -50,42 +49,111 @@ header>div>h1{
     background-color: #318D99;
     height: auto;
     padding: 10px;
-
+}
+#leftpart h2#name{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    padding: 40px 10px;
 }
 #leftpart h2{
     color: white;
     text-transform: uppercase;
     font-family: 'Fira Sans', sans-serif;
     font-size: 2.5em;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px;
 }
-#leftpart li{
+/* ***CONTACT*** */
+#leftpart div#contact{
+    padding: 10px 0px 50px 0px;
+}
+#leftpart li.infoperso{
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
     padding: 2px 0px 2px 15px;
     font-size: 1em;
 }
-#contact li a:link{
+#contact li.infoperso a:link{
     color: white;
     text-decoration: none;
 }
-#contact li a:visited{
+#contact li.infoperso a:visited{
     color: white;
 }
-#contact li a:hover{
+#contact li.infoperso a:hover{
     color: #ce9993;
     font-size: 1.2em;
     transition: 0.5s ease-in-out;
 }
-#leftpart ul{
-    padding: 10px 0px 50px 0px;
+/* ***OBJECTIFS*** */
+#leftpart div#objectifs{
+    padding: 0 0 50px 0;
 }
 #leftpart p{
     color: white;
     font-family: 'Nanum Gothic', sans-serif;
-    padding: 10px 0px 50px 15px;
+    padding: 10px 15px 0px 15px;
     font-size: 1em;
 }
+/* ***COMPETENCES*** */
+#leftpart div#competences{
+    margin: 0 0 50px 0;
+}
+div.container_competence{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40px 1fr 40px 90px 40px 90px;
+    margin: 10px 0 0 0;
+}
+div#competences h3{
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    border-top: solid white 1px;
+    padding: 5px;
+    margin: 0 20%;
+}
+div#competences h3#frontend{
+    grid-column: 1 / 3;
+}
+div#competences h3#backend{
+    grid-column: 1 / 2;
+}
+div#competences h3#cms{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+div#competences h3#tools{
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+}
+div.container_competence ul.frontend{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 1 / 3;
+}
+div.container_competence ul.backend, div.container_competence ul.cms{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+div.container_competence ul.tools{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 1 / 3;
+}
+div.container_competence li#logo_competence{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+div.container_competence li#logo_competence img{
+    height: 50px;
+}  
 /* ***BOUTON*** */
 .cvpdf a{
     display: flex;
