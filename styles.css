@@ -408,6 +408,9 @@ footer{
     }
 }
 @media screen and (max-width: 550px) {
+    #imgprin{
+        height: 300px;
+    }
     #leftpart h2#name{
         font-size:3em;
     }
@@ -472,11 +475,15 @@ footer{
     }
     #objectifs p{
         margin: 0 10%;
+        text-align: center;
     }
 }
 @media screen and (max-width: 470px){
     header>div>h1{
         font-size: 2em;
         text-align: center;
+    }
+    #imgprin{
+        height: 250px;
     }
 }
