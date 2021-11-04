@@ -205,6 +205,7 @@ div.container_competence li#logo_competence img{
 #rightpart .exppro p{
     font-family: 'Nanum Gothic', sans-serif;
     padding: 5px 20px;
+    margin-bottom: 40px;
 }
 #rightpart .formations p{
     font-family: 'Nanum Gothic', sans-serif;
@@ -221,6 +222,18 @@ div.container_competence li#logo_competence img{
     font-family: 'Nanum Gothic', sans-serif;
     padding: 1px 20px;
 }
+.lang{
+    margin-bottom: 40px;
+}
+.lang li{
+    padding: 3px 0;
+}
+.hobbis{
+    margin-bottom: 40px;
+}
+.autres{
+    margin-bottom: 40px;
+}
 /* **************** FOOTER **************** */
 footer{
     background-color: #98CCB9;
@@ -234,35 +247,118 @@ footer{
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 1.2em;
 }
+@media screen and (max-width: 1330px){
+    #leftpart h2#name{
+        font-size: 3.5em;
+    }
+}
+@media screen and (max-width: 1180px){
+    #leftpart h2#name{
+        font-size: 3em;
+    }
+    /* ***COMPETENCES*** */
+    div.container_competence{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40px 1fr 40px 90px 40px 90px 40px 90px;
+    }
+
+    div#competences h3#frontend{
+        grid-column: 1 / 2;
+    }
+    div#competences h3#backend{
+        grid-column: 1 / 2;
+    }
+    div#competences h3#cms{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    div#competences h3#tools{
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+    div.container_competence ul.frontend{
+        grid-column: 1 / 2;
+    }
+    div.container_competence ul.tools{
+        grid-column: 1 / 2;
+    }
+}
+@media screen and (max-width: 1030px){
+    #leftpart h2#name{
+        font-size: 2.5em;
+    }
+    header>div>h1{
+        font-size: 4em;
+    }
+}
 @media screen and (max-width: 750px) {
     .container{
         display: grid;
         grid-template-columns: 1fr;
     }
+    header>div>h1{
+        font-size: 3.5em;
+    }
     #leftpart{
         grid-column: 1fr;
-        display: flex;
-        flex-flow:row wrap;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 150px 270px 1fr 105px;
     }
-    #contact li, #contact h2, #competences h2, #competences li, #autres h2, #autres li, #objectifs h2, #objectifs p{
+    #contact li, #contact h2, #competences h2, #competences li, #objectifs h2, #objectifs p{
         display: flex;
         justify-content: center;
     }
-    #contact li, #competences li, #autres li{
+    #leftpart #objectifs p{
+        padding: 10px;
+    }
+    #contact li, #competences li{
         padding: 0;
     }
-    #contact ul, #competences ul, #autres ul, #objectifs p{
+    #contact ul, #competences ul, #objectifs p{
         padding: 10px 0;
     }
-    #contact, #competences, #autres, #objectifs{
+    #contact, #competences, #objectifs{
         padding: 10px;
-        width: 300px;
+    }
+    #leftpart h2#name{
+        grid-column: 1 / 3;
+        font-size: 4em;
+    }
+    div#competences{
+        grid-column: 1 / 3;
+    }
+    div.container_competence{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40px 1fr 40px 90px 40px 90px;
+    }
+    div#competences h3#frontend{
+        grid-column: 1 / 3;
+    }
+    div#competences h3#backend{
+        grid-column: 1 / 2;
+    }
+    div#competences h3#cms{
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    div#competences h3#tools{
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+    }
+    div.container_competence ul.frontend{
+        grid-column: 1 / 3;
+    }
+    div.container_competence ul.tools{
+        grid-column: 1 / 3;
     }
     .cvpdf{
         margin: 10px auto;
         height: auto;
         width: 80%;
+        grid-column: 1 / 3;
     }
     .cvpdf a{
         margin: auto;
@@ -271,12 +367,20 @@ footer{
         grid-column: 1fr;
     }
     #rightpart .hobbis ul{
-        padding: 0 20px 10px 20px;
+        padding: 0 20px ;
+    }
+    #rightpart{
+        padding-bottom: 40px;
     }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 670px) {
     header>div>h1{
-        font-size: 4em;
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 600px) {
+    header>div>h1{
+        font-size: 2.5em;
     }
     #rightpart h2{
         font-size: 1.5em;
@@ -303,8 +407,76 @@ footer{
         font-size: 0.9em;
     }
 }
-@media screen and (max-width: 430px){
+@media screen and (max-width: 550px) {
+    #leftpart h2#name{
+        font-size:3em;
+    }
+    #leftpart{
+        grid-column: 1fr;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 140px;
+    }
+    #leftpart h2#name{
+        grid-column: 1 / 2;
+    }
+    div#competences{
+        grid-column: 1 / 2;
+    }
+    div#competences h3#frontend{
+        grid-column: 1 / 2;
+    }
+    div#competences h3#backend{
+        grid-column: 1 / 2;
+    }
+    div#competences h3#cms{
+        grid-column: 1 / 2;
+    }
+    div#competences h3#tools{
+        grid-column: 1 / 2;
+    }
+    div.container_competence ul.frontend{
+        grid-column: 1 / 2;
+    }
+    div.container_competence ul.tools{
+        grid-column: 1 / 2;
+    }
+    .cvpdf{
+        grid-column: 1 / 2;
+    }
+    /* ***COMPETENCES*** */
+    div.container_competence{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40px 1fr 40px 90px 40px 90px 40px 90px;
+    }
+    div#competences h3#frontend{
+        grid-column: 1 / 2;
+    }
+    div#competences h3#backend{
+        grid-column: 1 / 2;
+    }
+    div#competences h3#cms{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    div#competences h3#tools{
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+    div.container_competence ul.frontend{
+        grid-column: 1 / 2;
+    }
+    div.container_competence ul.tools{
+        grid-column: 1 / 2;
+    }
+    #objectifs p{
+        margin: 0 10%;
+    }
+}
+@media screen and (max-width: 470px){
     header>div>h1{
-        font-size: 3em;
+        font-size: 2em;
+        text-align: center;
     }
 }
